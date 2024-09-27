@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-sage-100: #f1f8e9;
+  --color-sage-200: #dcedc8;
+  --color-sage-600: #7cb342;
+  --color-sage-700: #689f38;
+  --color-sage-800: #558b2f;
+  --color-teal-600: #26a69a;
+  --color-teal-700: #00897b;
+}
+
+body {
+  color: var(--color-sage-800);
+  background-color: var(--color-sage-100);
+}
+
+.hero {
+  background-image: url('/hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@layer utilities {
+  .bg-sage-100 {
+    background-color: var(--color-sage-100);
+  }
+  .text-sage-100 {
+    color: var(--color-sage-100);
+  }
+  .text-sage-200 {
+    color: var(--color-sage-200);
+  }
+  .text-sage-600 {
+    color: var(--color-sage-600);
+  }
+  .text-sage-700 {
+    color: var(--color-sage-700);
+  }
+  .text-sage-800 {
+    color: var(--color-sage-800);
+  }
+  .bg-sage-800 {
+    background-color: var(--color-sage-800);
+  }
+  .text-teal-700 {
+    color: var(--color-teal-700);
+  }
+  .bg-teal-600 {
+    background-color: var(--color-teal-600);
+  }
+  .hover\:bg-teal-700:hover {
+    background-color: var(--color-teal-700);
+  }
+  .hover\:text-teal-600:hover {
+    color: var(--color-teal-600);
+  }
+  .bg-sage-200 {
+    background-color: var(--color-sage-200);
+  }
+}
